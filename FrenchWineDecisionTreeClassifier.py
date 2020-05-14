@@ -54,7 +54,7 @@ all_species = df['species'].values
 (X_train,
  X_test,
  Y_train,
- Y_test) = train_test_split(all_inputs, all_species, train_size=0.8, random_state=1)#80%的数据选为训练集
+ Y_test) = train_test_split(all_inputs, all_species, train_size=0.85, random_state=1)#80%的数据选为训练集
 
 # 使用决策树算法进行训练
 from sklearn.tree import DecisionTreeClassifier #调入sklearn库中的DecisionTreeClassifier来构建决策树
